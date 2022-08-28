@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverso.Web", "Reverso\Reverso.Web.csproj", "{BFD68D9B-C57F-4DC4-8084-9798552767C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Web", "Reverso\Reverso.Web.csproj", "{BFD68D9B-C57F-4DC4-8084-9798552767C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverso.Application", "Reverso.Application\Reverso.Application.csproj", "{5500FABD-3DCC-40B7-B0BB-4F64614F110B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Application", "Reverso.Application\Reverso.Application.csproj", "{5500FABD-3DCC-40B7-B0BB-4F64614F110B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverso.Application.Tests", "Reverso.Application.Tests\Reverso.Application.Tests.csproj", "{189D28B0-33A4-437D-A0CE-A1BFB1CA15F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Application.Tests", "Reverso.Application.Tests\Reverso.Application.Tests.csproj", "{189D28B0-33A4-437D-A0CE-A1BFB1CA15F4}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Reverso.Database", "Reverso.Database\Reverso.Database.sqlproj", "{4E18D187-333E-457E-8AE8-0EF102227DBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverso.Persistence", "Reverso.Persistence\Reverso.Persistence.csproj", "{0F3893AD-7ADE-4AF2-919B-E0E71B65E405}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverso.Domain", "Reverso.Domain\Reverso.Domain.csproj", "{F006D9AD-AAF0-441D-8B23-CB2AC6DE87E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,14 @@ Global
 		{4E18D187-333E-457E-8AE8-0EF102227DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E18D187-333E-457E-8AE8-0EF102227DBD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4E18D187-333E-457E-8AE8-0EF102227DBD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0F3893AD-7ADE-4AF2-919B-E0E71B65E405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F3893AD-7ADE-4AF2-919B-E0E71B65E405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F3893AD-7ADE-4AF2-919B-E0E71B65E405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F3893AD-7ADE-4AF2-919B-E0E71B65E405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F006D9AD-AAF0-441D-8B23-CB2AC6DE87E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F006D9AD-AAF0-441D-8B23-CB2AC6DE87E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F006D9AD-AAF0-441D-8B23-CB2AC6DE87E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F006D9AD-AAF0-441D-8B23-CB2AC6DE87E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

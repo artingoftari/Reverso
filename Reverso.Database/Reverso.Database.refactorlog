@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="14e324ac-c3b5-4420-bd15-8c934a8bc26f" ChangeDateTime="08/28/2022 20:23:57">
+    <Property Name="ElementName" Value="[dbo].[ReversedPhrase].[ReversedPhrase]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ReversedPhrase]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ReversedText" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fe15ed9b-6f2c-4176-8c0e-163f98af245a" ChangeDateTime="08/28/2022 20:24:00">
+    <Property Name="ElementName" Value="[dbo].[ReversedPhrase].[OriginalPhrase]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ReversedPhrase]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="OriginalText" />
+  </Operation>
+</Operations>
