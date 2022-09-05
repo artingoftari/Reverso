@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Reverso.Persistence.Configuration
 {
-    public class ReversedPhraseConfiguration : IEntityTypeConfiguration<ReversedPhrase>
+    public class ReversedPhraseConfiguration : IEntityTypeConfiguration<Phrase>
     {
-        public void Configure(EntityTypeBuilder<ReversedPhrase> builder)
+        public void Configure(EntityTypeBuilder<Phrase> builder)
         {
             builder.ToTable("ReversedPhrase").HasKey(rp => rp.Id);
         }

@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Application.Tests",
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Reverso.Database", "Reverso.Database\Reverso.Database.sqlproj", "{4E18D187-333E-457E-8AE8-0EF102227DBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverso.Persistence", "Reverso.Persistence\Reverso.Persistence.csproj", "{0F3893AD-7ADE-4AF2-919B-E0E71B65E405}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Persistence", "Reverso.Persistence\Reverso.Persistence.csproj", "{0F3893AD-7ADE-4AF2-919B-E0E71B65E405}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverso.Domain", "Reverso.Domain\Reverso.Domain.csproj", "{F006D9AD-AAF0-441D-8B23-CB2AC6DE87E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Domain", "Reverso.Domain\Reverso.Domain.csproj", "{F006D9AD-AAF0-441D-8B23-CB2AC6DE87E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverso.Base", "Reverso.Base\Reverso.Base.csproj", "{F8D2CE39-99AE-402C-B919-3F51A412E394}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverso.Domain.Tests", "Reverso.Domain.Tests\Reverso.Domain.Tests.csproj", "{2F50E64E-32CF-402B-85EC-70C5D12502D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +51,14 @@ Global
 		{F006D9AD-AAF0-441D-8B23-CB2AC6DE87E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F006D9AD-AAF0-441D-8B23-CB2AC6DE87E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F006D9AD-AAF0-441D-8B23-CB2AC6DE87E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D2CE39-99AE-402C-B919-3F51A412E394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D2CE39-99AE-402C-B919-3F51A412E394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D2CE39-99AE-402C-B919-3F51A412E394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D2CE39-99AE-402C-B919-3F51A412E394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F50E64E-32CF-402B-85EC-70C5D12502D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F50E64E-32CF-402B-85EC-70C5D12502D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F50E64E-32CF-402B-85EC-70C5D12502D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F50E64E-32CF-402B-85EC-70C5D12502D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

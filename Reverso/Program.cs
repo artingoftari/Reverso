@@ -1,3 +1,9 @@
+using MediatR;
+using Microsoft.EntityFrameworkCore;
+using Reverso.Application.Phrase;
+using Reverso.Persistence;
+using System.Reflection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +12,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<ReversoDbContext>(o => { o.UseSqlServer(builder.Configuration.GetConnectionString("DbConnectionString")); });
+builder.Services.AddMediatR(typeof(ReversePhraseCommandHandler).GetTypeInfo().Assembly);
 
 var app = builder.Build();
 
