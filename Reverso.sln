@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Web", "Reverso\Reverso.Web.csproj", "{BFD68D9B-C57F-4DC4-8084-9798552767C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Presentation", "Reverso\Reverso.Presentation.csproj", "{BFD68D9B-C57F-4DC4-8084-9798552767C7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Application", "Reverso.Application\Reverso.Application.csproj", "{5500FABD-3DCC-40B7-B0BB-4F64614F110B}"
 EndProject
@@ -15,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Persistence", "Reve
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Domain", "Reverso.Domain\Reverso.Domain.csproj", "{F006D9AD-AAF0-441D-8B23-CB2AC6DE87E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverso.Base", "Reverso.Base\Reverso.Base.csproj", "{F8D2CE39-99AE-402C-B919-3F51A412E394}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Base", "Reverso.Base\Reverso.Base.csproj", "{F8D2CE39-99AE-402C-B919-3F51A412E394}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverso.Domain.Tests", "Reverso.Domain.Tests\Reverso.Domain.Tests.csproj", "{2F50E64E-32CF-402B-85EC-70C5D12502D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverso.Domain.Tests", "Reverso.Domain.Tests\Reverso.Domain.Tests.csproj", "{2F50E64E-32CF-402B-85EC-70C5D12502D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
