@@ -5,10 +5,10 @@ namespace Reverso.Domain
 {
     public class Phrase
     {
-        public Phrase(string text, params char[] specialCharacters)
+        public Phrase(string text, params char[] immovableCharacters)
         {
             OriginalText = text;
-            ReversedText = text.ReversePhrase(specialCharacters);
+            ReversedText = text.ReversePhrase(immovableCharacters);
             Reversed = DateTime.Now;
         }
         public Phrase() { }

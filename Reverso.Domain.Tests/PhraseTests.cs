@@ -41,7 +41,6 @@ namespace Reverso.Domain.Tests
         [Fact]
         public void ReversePhrase_ConfiguredForPeriodSeparator_KeepsPeriodPositionsAndReversesOtherSymbols()
         {
-
             Phrase reversalResultWithPeriod = new Phrase(TestPhrases.MultiWordPhraseWithPeriod, new char[] { ' ', '.' });
             Phrase reversalResultWithPeriodAndSemicolon = new Phrase(TestPhrases.MultiWordPhraseWithPeriodAndSemicolon, new char[] { ' ', '.' });
 
@@ -51,10 +50,16 @@ namespace Reverso.Domain.Tests
         [Fact]
         public void ReversePhrase_ReceivesPhrase_KeepsCase()
         {
-
             Phrase reversalResultWithPeriod = new Phrase(TestPhrases.MultiWordPhraseWithDifferentCases, new char[] { ' ', '.' });
 
             Assert.Equal(TestPhrases.ReversedMultiWordPhraseWithDifferentCases, reversalResultWithPeriod.ReversedText);
+        }
+        [Fact]
+        public void ReversePhrase_ReceivesPhraseWithRepeatingSubsetsOfStrings_ReversesItCorrectly()
+        {
+            Phrase reversalResultWithPeriod = new Phrase("o on one none nonemon anemone nononame onemenoenom", new char[] { ' ', '.' });
+
+            Assert.Equal("o no eno enon nomenon enomena emanonon moneonemeno", reversalResultWithPeriod.ReversedText);
         }
     }
 }

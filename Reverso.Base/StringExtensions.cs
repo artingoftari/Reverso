@@ -9,24 +9,24 @@ namespace Reverso.Base
 {
     public static class StringExtensions
     {
-        public static string ReversePhrase(this string phraseToReverse, params char[] specialCharacters)
+        public static string ReversePhrase(this string phraseToReverse, params char[] immovableCharacters)
         {
             string[] wordsToReverse = phraseToReverse.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            List<string> reversedWords = new();
 
             foreach (string wordToReverse in wordsToReverse)
             {
-                string reversedWord = ReverseWord(wordToReverse, specialCharacters);
-                phraseToReverse = phraseToReverse.Replace(wordToReverse, reversedWord);
+                string reversedWord = ReverseWord(wordToReverse, immovableCharacters);
+                reversedWords.Add(reversedWord);
             }
-
-            return phraseToReverse.Trim();
+            return string.Join(" ", reversedWords);
         }
-        private static string ReverseWord(string wordToReverse, char[] specialCharacters)
+        private static string ReverseWord(string wordToReverse, char[] immovableCharacters)
         {
-            if (wordToReverse.Any(w => specialCharacters.Contains(w)))
+            if (wordToReverse.Any(w => immovableCharacters.Contains(w)))
             {
-                string[] specialWordsToReverse = wordToReverse.Split(specialCharacters, StringSplitOptions.RemoveEmptyEntries);
-                foreach (string specialWordToReverse in specialWordsToReverse)
+                string[] wordsWithImmovableCharacters = wordToReverse.Split(immovableCharacters, StringSplitOptions.RemoveEmptyEntries);
+                foreach (string specialWordToReverse in wordsWithImmovableCharacters)
                 {
                     char[] specialReversedWord = specialWordToReverse.Reverse().ToArray();
                     wordToReverse = wordToReverse.Replace(specialWordToReverse, new string(specialReversedWord));
