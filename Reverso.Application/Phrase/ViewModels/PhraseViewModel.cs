@@ -17,7 +17,6 @@ namespace Reverso.Application.Phrase.ViewModels
         public string OriginalText { get; set; }
 
         public string ReversedText { get; set; }
-
         public DateTime Reversed { get; set; }
     }
 }

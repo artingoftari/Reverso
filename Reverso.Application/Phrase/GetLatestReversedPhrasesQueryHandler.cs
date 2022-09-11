@@ -21,8 +21,8 @@ namespace Reverso.Application.Phrase
         public async Task<List<PhraseViewModel>> Handle(GetLatestReversedPhrasesQuery query, CancellationToken cancellationToken)
         {
             return await _phraseReverserContext.ReversedPhrases.OrderByDescending(rp => rp.Reversed)
-                .Skip(query.Page - 1 ?? 1)
-                .Take(query.Size ?? 5)
+                .Skip(query.Page.Value - 1)
+                .Take(query.Size.Value)
                 .Select(p => new PhraseViewModel(p))
                 .ToListAsync(cancellationToken);
         }
