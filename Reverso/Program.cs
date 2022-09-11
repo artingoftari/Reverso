@@ -1,5 +1,6 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Reverso.Application.Configuration;
 using Reverso.Application.Phrase;
 using Reverso.Persistence;
 using System.Reflection;
@@ -15,6 +16,13 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ReversoDbContext>(o => { o.UseSqlServer(builder.Configuration.GetConnectionString("DbConnectionString")); });
 builder.Services.AddMediatR(typeof(ReversePhraseCommandHandler).GetTypeInfo().Assembly);
+//builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+var confObject = Activator.CreateInstance(typeof(ReversePhraseConfiguration));
+builder.Configuration.Bind(confObject);
+builder.Configuration.GetSection(nameof(ReversePhraseConfiguration)).Bind(confObject);
+builder.Services.AddSingleton((ReversePhraseConfiguration)confObject);
+
 
 var app = builder.Build();
 
